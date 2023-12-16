@@ -1,0 +1,41 @@
+html {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    /* background-color: #C3E2C2; */
+}
+nav {
+  background-color: #304D30;
+  margin: auto -16px;
+  padding: 16px 32px;
+}
+
+header > a {
+  font-family: "Leckerli One";
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #092635;
+  margin-left: 10px;
+}
+#logo{
+    font-family: "Leckerli One";
+    font-size: 1.7em;
+    font-weight: 200;
+    color: #092635;
+    margin-left: 10px;
+}
+img{
+    border-radius: 20px;
+}
+p>span {
+    font-family: "Leckerli One";
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: #092635;
+    margin-left: 10px;
+}
+#icon {
+    width: 60px;
+    height: 60px;
+}
