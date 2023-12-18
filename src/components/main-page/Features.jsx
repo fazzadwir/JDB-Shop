@@ -6,29 +6,48 @@ import FmdGoodIcon from "@mui/icons-material/FmdGood";
 
 function Features() {
   return (
-    <div className="container px-4 py-5">
+    <div className="container px-4 py-3">
       <div className="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
         <div className="col d-flex flex-column align-items-start gap-2">
           <h2 className="fw-bold text-body-emphasis">
-            Left-aligned title explaining these awesome features
+            Mengapa Jastip di Kami?
           </h2>
           <p className="text-body-secondary">
-            Paragraph of text beneath the heading to explain the heading. We'll
-            add onto it with another sentence and probably just keep going until
-            we run out of words.
+            Karena kami tidak hanya sekadar jasa titip, tapi solusi lengkap
+            untuk kebutuhan belanja Anda. Dengan layanan yang lebih dari sekadar
+            antar barang, kami hadir dengan pengalaman belanja yang unik,
+            praktis, dan menyenangkan. Kualitas, harga, dan kemudahan belanja
+            bertemu dalam satu tempat. Pilih kami, temukan perbedaannya!"
           </p>
-          <a href="#" className="btn btn-primary btn-lg">
-            Primary button
-          </a>
         </div>
 
         <div className="col">
           <div className="row row-cols-1 row-cols-sm-2 g-4">
             {[
-              { icon: <AccessTimeIcon />, title: "Jastip bakal tepat waktu" },
-              { icon: <AutorenewIcon />, title: "Pemesanan flexible" },
-              { icon: <GppGoodIcon />, title: "Kualitas Terjamin!" },
-              { icon: <FmdGoodIcon />, title: "Gratis Antar!" },
+              {
+                icon: <AccessTimeIcon />,
+                title: "Jastip bakal tepat waktu",
+                paragraph:
+                  "Jastip bersama kami, barang Anda pasti sampai di tujuan dengan tepat waktu.",
+              },
+              {
+                icon: <AutorenewIcon />,
+                title: "Pemesanan flexible",
+                paragraph:
+                  "Sesuaikan waktu dan kebutuhanmu, karena layanan kami dirancang untuk memudahkanmu sepenuhnya.",
+              },
+              {
+                icon: <GppGoodIcon />,
+                title: "Kualitas Terjamin!",
+                paragraph:
+                  "Jastip bukan cuma sekadar layanan, tapi juga jaminan kualitas barang yang terjamin.",
+              },
+              {
+                icon: <FmdGoodIcon />,
+                title: "Gratis Antar!",
+                paragraph:
+                  "Lebih mudah, lebih hemat, dan pastinya tanpa biaya antar.",
+              },
             ].map((feature, index) => (
               <div className="col d-flex flex-column gap-2" key={index}>
                 <div
@@ -47,7 +66,7 @@ function Features() {
                   {feature.title}
                 </h4>
                 <p className="text-body-secondary">
-                  Paragraph of text beneath the heading to explain the heading.
+                 {feature.paragraph}
                 </p>
               </div>
             ))}

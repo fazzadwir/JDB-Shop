@@ -38,4 +38,30 @@ p>span {
 #icon {
     width: 60px;
     height: 60px;
+    color: #192655;
 }
+.jdb{
+    font-family: "Leckerli One";
+    font-size: 1.2em;
+    font-weight: 200;
+    color: #092635;
+    margin-left: 10px;
+}
+.nav-list {
+    color: #092635
+}
+.card {
+    position: relative;
+    overflow: visible;
+  }
+  
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    pointer-events: none;
+  }

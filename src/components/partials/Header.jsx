@@ -14,21 +14,21 @@ function Header() {
           </a>
           <ul className="nav nav-pills">
             <li className="nav-item">
-              <a href="#" className="mx-2 nav-link" aria-current="page">
+              <a href="#" className="mx-2 nav-link nav-list" aria-current="page">
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a href="#" className="mx-2 nav-link">
+              <a href="#" className="mx-2 nav-link nav-list">
                 Contact Us
               </a>
             </li>
             <li className="nav-item">
-              <a href="#" className="mx -2 nav-link">
+              <a href="#" className="mx -2 nav-link nav-list">
                 FAQs
               </a>
             </li>
-            <div class="mx-2 text-end">
+            <div className="mx-2 text-end">
               <button type="button" className="btn btn-outline-dark me-2">
                 Login
               </button>
