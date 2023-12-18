@@ -1,4 +1,6 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import AutorenewIcon from "@mui/icons-material/Autorenew";
 import GppGoodIcon from "@mui/icons-material/GppGood";

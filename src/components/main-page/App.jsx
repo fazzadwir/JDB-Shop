@@ -5,6 +5,9 @@ import Features from "./Features";
 import Profile from "./Profile";
 import Product from "./Product";
 import Footer from "../partials/Footer";
+import FAQSection from "./Faq";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 function App() {
   return (
@@ -14,6 +17,7 @@ function App() {
       <Profile />
       <Features />
       <Product/>
+      <FAQSection/>
       <Footer/>
     </div>
   );

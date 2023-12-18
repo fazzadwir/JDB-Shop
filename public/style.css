@@ -1,12 +1,13 @@
 html {
-    font-size: 1.2rem;
-    font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
 }
-body{
-    /* background-color: #C3E2C2; */
+body {
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/flowers.png");
 }
 nav {
-  background-color: #304D30;
+  background-color: #304d30;
   margin: auto -16px;
   padding: 16px 32px;
 }
@@ -18,50 +19,50 @@ header > a {
   color: #092635;
   margin-left: 10px;
 }
-#logo{
-    font-family: "Leckerli One";
-    font-size: 1.7em;
-    font-weight: 200;
-    color: #092635;
-    margin-left: 10px;
+#logo {
+  font-family: "Leckerli One";
+  font-size: 1.7em;
+  font-weight: 200;
+  color: #092635;
+  margin-left: 10px;
 }
-img{
-    border-radius: 20px;
+img {
+  border-radius: 20px;
 }
-p>span {
-    font-family: "Leckerli One";
-    font-size: 1.5rem;
-    font-weight: 200;
-    color: #092635;
-    margin-left: 10px;
+p > span {
+  font-family: "Leckerli One";
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #092635;
+  margin-left: 10px;
 }
 #icon {
-    width: 60px;
-    height: 60px;
-    color: #192655;
+  width: 60px;
+  height: 60px;
+  color: #192655;
 }
-.jdb{
-    font-family: "Leckerli One";
-    font-size: 1.2em;
-    font-weight: 200;
-    color: #092635;
-    margin-left: 10px;
+.jdb {
+  font-family: "Leckerli One";
+  font-size: 1.2em;
+  font-weight: 200;
+  color: #092635;
+  margin-left: 10px;
 }
 .nav-list {
-    color: #092635
+  color: #092635 !important;
 }
 .card {
-    position: relative;
-    overflow: visible;
-  }
-  
-  .card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-    pointer-events: none;
-  }
+  position: relative;
+  overflow: visible;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  pointer-events: none;
+}

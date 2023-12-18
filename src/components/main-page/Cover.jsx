@@ -1,5 +1,7 @@
 import React from "react";
 import myImage from '../assets/image/shopping.png';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 function Cover() {
   return (

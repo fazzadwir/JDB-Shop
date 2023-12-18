@@ -1,5 +1,6 @@
 import React from "react";
-import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 function Profile() {
   return (
