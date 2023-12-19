@@ -1,0 +1,6 @@
+body {
+  background-color: #9a616d;
+}
+.card::before {
+  background: none;
+}
