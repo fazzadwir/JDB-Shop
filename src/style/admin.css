@@ -1,0 +1,17 @@
+html {
+    font-size: 1.2rem;
+  }
+body {
+  /* background-image: url("https://www.transparenttextures.com/patterns/flowers.png"); */
+  font-family: "Poppins", "Montserrat", sans-serif;
+  background-color: #fff;
+}
+.admin-container {
+  display: flex;
+  height: 100vh;
+}
+
+.admin-content {
+  flex: 1;
+  padding: 20px; /* Adjust as needed */
+}

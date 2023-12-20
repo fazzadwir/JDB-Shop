@@ -3,11 +3,15 @@ import { Link, useNavigate } from "react-router-dom";
 
 function Header() {
   const navigate = useNavigate();
+  const register = useNavigate();
 
   const handleLoginClick = () => {
     // Use the navigate function to navigate to the "/login" route
     navigate("/login");
   };
+  const handleRegisterClick = () => {
+    register("/register");
+  }
 
   return (
     <div className="container">
@@ -43,9 +47,13 @@ function Header() {
           >
             Login
           </button>
-          <Link to="/signup" className="btn btn-dark">
-            Sign-up
-          </Link>
+          <button
+            type="button"
+            className="btn btn-dark"
+            onClick={handleRegisterClick}
+          >
+            Buat Akun
+          </button>
         </div>
       </header>
     </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import {useNavigate } from "react-router-dom";
 import {
   MDBBtn,
   MDBContainer,
@@ -11,48 +12,55 @@ import {
   MDBInput,
 } from "mdb-react-ui-kit";
 import "../../style/login.css"
+import shoppingImage from "../assets/image/girl-shop.jpg"
 
 function Login() {
+  const register = useNavigate();
+  const admin = useNavigate();
+
+  const handleAdminClick = () => {
+    admin("/admin");
+  }
+
+  const handleRegisterClick = () => {
+    register("/register");
+  }
   return (
-    <MDBContainer className="my-5 login-container">
-      <MDBCard>
+    <MDBContainer className="my-5 login-container" >
+      <MDBCard className="card-with-shadow">
         <MDBRow className="g-0">
           <MDBCol md="6">
             <MDBCardImage
-              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
+              src={shoppingImage}
               alt="login form"
-              className="rounded-start w-100"
+              className="login-card"
             />
           </MDBCol>
 
           <MDBCol md="6">
             <MDBCardBody className="d-flex flex-column">
               <div className="d-flex flex-row mt-2">
-                <MDBIcon
-                  fas
-                  icon="cubes fa-3x me-3"
-                  style={{ color: "#ff6219" }}
-                />
-                <span className="h1 fw-bold mb-0">Logo</span>
+                <span className="h2 fw-bold mb-0">Masuk dengan Akun JDB</span>
               </div>
 
               <h5
-                className="fw-normal my-4 pb-3"
+                className="fw-normal my-3 "
                 style={{ letterSpacing: "1px" }}
               >
                 Sign into your account
               </h5>
-
+              <div class="form-helper my-1">Email</div>
               <MDBInput
+                placeholder="Email address"
                 wrapperClass="mb-4"
-                label="Email address"
                 id="formControlLg"
                 type="email"
                 size="lg"
               />
+              <div class="form-helper my-1">Password</div>
               <MDBInput
                 wrapperClass="mb-4"
-                label="Password"
+                placeholder="Password"
                 id="formControlLg"
                 type="password"
                 size="lg"
@@ -65,20 +73,14 @@ function Login() {
                 Forgot password?
               </a>
               <p className="mb-5 pb-lg-2" style={{ color: "#393f81" }}>
-                Don't have an account?{" "}
-                <a href="#!" style={{ color: "#393f81" }}>
-                  Register here
+                Belum punya akun?{" "}
+                <a href="#!" onClick={handleRegisterClick} style={{ color: "#393f81" }}>
+                  Buat akun JDB dulu !
                 </a>
               </p>
-
-              <div className="d-flex flex-row justify-content-start">
-                <a href="#!" className="small text-muted me-1">
-                  Terms of use.
-                </a>
-                <a href="#!" className="small text-muted">
-                  Privacy policy
-                </a>
-              </div>
+              <MDBBtn onClick={handleAdminClick} className="mb-4 px-5" color="dark" size="lg">
+                Admin check
+              </MDBBtn>
             </MDBCardBody>
           </MDBCol>
         </MDBRow>
