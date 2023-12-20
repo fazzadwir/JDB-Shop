@@ -1,6 +1,7 @@
-body {
-  background-color: #9a616d;
-}
-.card::before {
-  background: none;
-}
+.login-container body {
+    background-color: #9a616d;
+  }
+  
+  .login-container .card::before {
+    background: none;
+  }

@@ -7,14 +7,14 @@ function Card(props) {
   return (
     <div className="col">
       <div
-        className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+        className="card-product card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg img-fluid"
         style={{
           backgroundImage: `url(${props.imageUrl})`,
           backgroundSize: "cover", // Set background size to cover
         }}
       >
         <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 position-relative">
-          <h3 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+          <h3 className="pt-5 mb-4 display-6 lh-1 fw-bold">
             {props.cardTitle}
           </h3>
           <ul className="d-flex list-unstyled mt-auto">

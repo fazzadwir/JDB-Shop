@@ -1,10 +1,11 @@
 html {
   font-size: 1.2rem;
-  font-family: "Montserrat", sans-serif;
+  
 }
 body {
-    background-color: #ffffff;
-    background-image: url("https://www.transparenttextures.com/patterns/flowers.png");
+  /* background-image: url("https://www.transparenttextures.com/patterns/flowers.png"); */
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
 }
 nav {
   background-color: #304d30;
@@ -51,12 +52,12 @@ p > span {
 .nav-list {
   color: #092635 !important;
 }
-.card {
+.card-product {
   position: relative;
   overflow: visible;
 }
 
-.card::before {
+.card-product::before {
   content: "";
   position: absolute;
   top: 0;
@@ -65,4 +66,41 @@ p > span {
   left: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   pointer-events: none;
+}
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: 0.3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 16px 14px 18px;
+  color: #fff;
+  background-color: #15883e;
+  height: 70px;
+  width: 40%;
+  text-decoration: none; 
+
+  /* Add hover and active styles here */
+  &:hover {
+    background-color: #1db954;
+    color: black;
+    text-decoration: none; 
+  }
+
+  &:active {
+    color: black;
+    text-decoration: none; 
+  }
 }

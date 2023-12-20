@@ -4,12 +4,12 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 
 function Profile() {
   return (
-    <div className="my-1">
+    <div className="">
       <div className="p-5 text-center ">
-        <div className="container py-5">
-          <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+        <div className="container">
+          <h2 className="display-5 fw-bold text-body-emphasis lh-1 mb-4">
             Apa itu <span className="jdb">JDB</span> Shop?
-          </h1>
+          </h2>
           <p className="col-lg-8 mx-auto lead">
             <span className="jdb">JDB</span> Shop adalah layanan jasa titip
             barang yang menyediakan solusi terbaik untuk kebutuhan belanja Anda.

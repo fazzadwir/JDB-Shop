@@ -18,7 +18,7 @@ function Product() {
           imageUrl={donutImage}
         />
         <Card
-          cardTitle="Pakaian Berkualitas, Pengalaman Titip Tanpa Kompromi."
+          cardTitle="Pakaian Berkualitas, Jastip Tanpa Kompromi."
           cardCategory="Clothes"
           imageUrl={clothesImage}
         />

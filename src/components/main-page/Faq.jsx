@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import FaqItem from "./partials/FaqItem";
 import { MDBAccordion, MDBAccordionItem, MDBContainer } from "mdb-react-ui-kit";
 

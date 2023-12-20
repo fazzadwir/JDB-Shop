@@ -14,7 +14,7 @@ import "../../style/login.css"
 
 function Login() {
   return (
-    <MDBContainer className="my-5">
+    <MDBContainer className="my-5 login-container">
       <MDBCard>
         <MDBRow className="g-0">
           <MDBCol md="6">
