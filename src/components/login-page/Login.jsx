@@ -19,7 +19,7 @@ function Login() {
   const admin = useNavigate();
 
   const handleAdminClick = () => {
-    admin("/admin");
+    admin("/admin/dashboard");
   }
 
   const handleRegisterClick = () => {

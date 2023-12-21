@@ -4,9 +4,10 @@ import TableData from "./partials/TableData";
 import Alert from "react-bootstrap/Alert";
 
 function User() {
+  const pageID = "user"
   return (
     <React.Fragment>
-      <div>
+      <div className="container">
         <h2 className="h2">Users</h2>
         <p className="lead">
           Manage users here! you can Add, Edit, and Delete your user
@@ -30,12 +31,14 @@ function User() {
               name="Kenzo"
               email="kenzo@gmail.com"
               phone="0811231225"
+              pageID={pageID}
             />
             <TableData
               num="2"
               name="John"
               email="john@abc.com"
               phone="08782321u92"
+              pageID={pageID}
             />
           </tbody>
         </table>
