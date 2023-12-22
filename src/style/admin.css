@@ -8,7 +8,6 @@ body {
 }
 .admin-container {
   display: flex;
-  height: 100vh;
 }
 
 .admin-content {

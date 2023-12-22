@@ -6,13 +6,13 @@ function Order() {
     const pageID = "order";
   return (
     <React.Fragment>
-      <div className="container">
+      <div className="container-fluid container">
         <h2 className="h2">Orders</h2>
         <small className="lead">
           Manage Order here! you can update order status and more !
         </small>
         <br />
-        <table class="table my-4">
+        <table className="table my-4">
           <thead>
             <tr>
               <th scope="col">#</th>
@@ -20,7 +20,7 @@ function Order() {
               <th scope="col">Order</th>
               <th scope="col">Kuantitas</th>
               <th scope="col">Status</th>
-              <th scope="col">Phones Number</th>
+              <th scope="col">Nomor HP</th>
               <th scope="col">Action </th>
             </tr>
           </thead>
@@ -31,8 +31,9 @@ function Order() {
               order="Baju Gamis Anak"
               quantity="3 pcs"
               status="badge-warning"
-              statusTitle="Waiting for payment"
+              statusTitle="Menunggu Pembayaran"
               phone="0811231225"
+              route="admin/orders/update-produk"
               pageID={pageID}
             />
             <TableData

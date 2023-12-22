@@ -89,7 +89,6 @@ p > span {
   background-color: #15883e;
   height: 70px;
   width: 40%;
-  text-decoration: none;
 
   /* Add hover and active styles here */
   &:hover {
